@@ -1,0 +1,1965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.5.final using JasperReports Library version 6.21.5-74d586df47b25dbd05bd0957999819196e59934a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="danfse" pageWidth="595" pageHeight="842" columnWidth="585" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" isSummaryWithPageHeaderAndFooter="true" uuid="781533d2-525a-4851-8671-4b819f46089d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="cdChave" class="java.lang.String"/>
+	<parameter name="nNFSe" class="java.lang.String"/>
+	<parameter name="dCompet" class="java.lang.String"/>
+	<parameter name="dhEmi" class="java.lang.String"/>
+	<parameter name="nDPS" class="java.lang.String"/>
+	<parameter name="serie" class="java.lang.String"/>
+	<parameter name="emitCNPJ" class="java.lang.String"/>
+	<parameter name="emitxNome" class="java.lang.String"/>
+	<parameter name="emitxMun" class="java.lang.String"/>
+	<parameter name="emitCEP" class="java.lang.String"/>
+	<parameter name="opSimpNac" class="java.lang.String"/>
+	<parameter name="regApTribSN" class="java.lang.String"/>
+	<parameter name="tomaCPF" class="java.lang.String"/>
+	<parameter name="tomaIM" class="java.lang.String"/>
+	<parameter name="tomaxNome" class="java.lang.String"/>
+	<parameter name="tomafone" class="java.lang.String"/>
+	<parameter name="tomaemail" class="java.lang.String"/>
+	<parameter name="endToma" class="java.lang.String"/>
+	<parameter name="tomaxMun" class="java.lang.String"/>
+	<parameter name="tomaCEP" class="java.lang.String"/>
+	<parameter name="xTribNac" class="java.lang.String"/>
+	<parameter name="xLocPrestacao" class="java.lang.String"/>
+	<parameter name="xDescServ" class="java.lang.String"/>
+	<parameter name="tribISSQN" class="java.lang.String"/>
+	<parameter name="xLocIncid" class="java.lang.String"/>
+	<parameter name="vServ" class="java.lang.String"/>
+	<parameter name="tpRetISSQN" class="java.lang.String"/>
+	<parameter name="vDescCond" class="java.lang.String"/>
+	<parameter name="vDescIncond" class="java.lang.String"/>
+	<parameter name="vLiq" class="java.lang.String"/>
+	<parameter name="vTotTribFed" class="java.lang.String"/>
+	<parameter name="vTotTribEst" class="java.lang.String"/>
+	<parameter name="vTotTribMun" class="java.lang.String"/>
+	<parameter name="xNBS" class="java.lang.String"/>
+	<parameter name="imgNfse" class="java.lang.Object"/>
+	<parameter name="emitemail" class="java.lang.String"/>
+	<parameter name="emitfone" class="java.lang.String"/>
+	<parameter name="imgQrCode" class="java.lang.Object"/>
+	<parameter name="emitUF" class="java.lang.String"/>
+	<parameter name="emitxLgr" class="java.lang.String"/>
+	<parameter name="emitnro" class="java.lang.String"/>
+	<parameter name="emitxBairro" class="java.lang.String"/>
+	<parameter name="tomaxLgr" class="java.lang.String"/>
+	<parameter name="tomanro" class="java.lang.String"/>
+	<parameter name="tomaxBairro" class="java.lang.String"/>
+	<parameter name="emitIM" class="java.lang.String"/>
+	<parameter name="tomaCNPJ" class="java.lang.String"/>
+	<parameter name="cTribNac" class="java.lang.String"/>
+	<parameter name="cTribMun" class="java.lang.String"/>
+	<parameter name="cPaisPrestacao" class="java.lang.String"/>
+	<parameter name="cPaisResult" class="java.lang.String"/>
+	<parameter name="pAliq" class="java.lang.String"/>
+	<parameter name="nProcesso" class="java.lang.String"/>
+	<parameter name="tpImunidade" class="java.lang.String"/>
+	<parameter name="tpSusp" class="java.lang.String"/>
+	<parameter name="regEspTrib" class="java.lang.String"/>
+	<parameter name="tpBM" class="java.lang.String"/>
+	<parameter name="vCalcDR" class="java.lang.String"/>
+	<parameter name="vCalcBM" class="java.lang.String"/>
+	<parameter name="vISSQN" class="java.lang.String"/>
+	<parameter name="vBC" class="java.lang.String"/>
+	<parameter name="vRetCP" class="java.lang.String"/>
+	<parameter name="vRetCSLL" class="java.lang.String"/>
+	<parameter name="vRetIRRF" class="java.lang.String"/>
+	<parameter name="tpRetPisCofins" class="java.lang.String"/>
+	<parameter name="vPis" class="java.lang.String"/>
+	<parameter name="vCofins" class="java.lang.String"/>
+	<parameter name="vTotalRet" class="java.lang.String"/>
+	<parameter name="cNBS" class="java.lang.String"/>
+	<parameter name="prefeituraFone" class="java.lang.String"/>
+	<parameter name="prefeituraEmail" class="java.lang.String"/>
+	<parameter name="imgPrefeitura" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="832" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<frame>
+				<reportElement mode="Transparent" x="0" y="0" width="585" height="832" forecolor="#050505" backcolor="rgba(3, 3, 3, 0.0)" uuid="bc46aa18-af22-4c41-8933-0d8ff639aaa7">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="5">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="35" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="a588a093-5157-4e46-9ce8-45d960bed7ac">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement mode="Transparent" x="3" y="41" width="426" height="11" uuid="88c1ec39-f4a3-4347-9f62-8ee5e7f2403e">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+						<paragraph lineSpacingSize="0.05"/>
+					</textElement>
+					<text><![CDATA[Chave de Acesso da NFS-e]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement mode="Transparent" x="3" y="50" width="426" height="12" uuid="d60f39e9-7008-4953-9c27-732b8bc6db9c">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{cdChave}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="70" width="141" height="11" uuid="4a3dcaf0-526b-4202-8d3a-0ed8738de8e0">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+						<paragraph lineSpacingSize="0.05"/>
+					</textElement>
+					<text><![CDATA[Número da NFS-e
+]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="79" width="141" height="12" uuid="41fd0973-c358-4816-9546-63a95362c624">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nNFSe}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="71" width="141" height="11" uuid="61dba50c-a318-4f7d-ac92-2b544fcbb109">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Competência da NFS-e]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="80" width="141" height="12" uuid="ecf92c4f-c206-493b-b7dd-70a4d263769c">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{dCompet}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="71" width="141" height="11" uuid="36df5ff9-730c-4ea5-97d3-969a88fbaf13">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Data e Hora da emissão da NFS-e]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="80" width="141" height="12" uuid="b83228dd-1417-42dc-9e5a-39093894204c">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{dhEmi}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="96" width="141" height="11" uuid="1a93d07c-13c9-4319-8a83-c50542ce29ff">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Número da DPS]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="105" width="141" height="12" uuid="9216bb06-2641-4441-8f07-caac2f26375d">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nDPS} != null && !$P{nDPS}.trim().isEmpty()
+    ? $P{nDPS}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="97" width="141" height="11" uuid="65466091-74db-47f7-90af-e573c5ddc040">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Série da DPS]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="106" width="141" height="12" uuid="dfe07baf-b1dd-426b-8429-e9a41fbe04b5">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{serie} != null && !$P{serie}.trim().isEmpty()
+    ? $P{serie}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="97" width="141" height="11" uuid="38f94d69-e9e9-4454-852c-00faf82aa73d">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Data e Hora da emissão da DPS]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="106" width="141" height="12" uuid="b4cb49f8-1ced-40f3-915d-01f479a96175">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{dhEmi} != null && !$P{dhEmi}.trim().isEmpty()
+    ? $P{dhEmi}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="133" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="46026ccb-f9da-464a-a29d-5e2eb4b838f7">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement x="3" y="137" width="141" height="11" uuid="c4fe2b03-8c36-472d-9fab-839e8160186c">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[EMITENTE DA NFS-e]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="146" y="137" width="141" height="11" uuid="0a145a33-c489-4ed3-b5e3-b0e661f1babd">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CNPJ / CPF / NIF]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="146" width="141" height="12" uuid="eae60638-b056-48e5-ae00-c40994e4f5ea">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitCNPJ}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="137" width="141" height="11" uuid="57785fa3-71e1-4553-829e-60cec048938d">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Inscrição Municipal]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="146" width="141" height="12" uuid="dc67d1e5-03e5-4450-9f68-1893c5acaa65">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitIM} != null && !$P{emitIM}.trim().isEmpty()
+    ? $P{emitIM}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="432" y="136" width="141" height="11" uuid="ecb5c309-95a0-45f2-b43c-0864dd0d3a2e">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Telefone]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="145" width="141" height="12" uuid="95319bfd-55d9-46be-be89-a7242718e9f0">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitfone} != null && !$P{emitfone}.trim().isEmpty()
+    ? $P{emitfone}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="241" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="6cbc2870-96cf-48be-aed6-8b7bcca07b0c">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement x="442" y="106" width="122" height="20" uuid="4246419b-90d5-4634-a5a5-4c06f7173add">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font fontName="DejaVu Sans" size="5" isBold="false"/>
+					</textElement>
+					<text><![CDATA[A autenticidade desta NFS-e pode ser verificada pela leitura deste código QR ou pela consulta da chave de acesso no portal nacional da NFS-e]]></text>
+				</staticText>
+				<image>
+					<reportElement x="0" y="0" width="125" height="32" uuid="97c0f666-a19d-4dc6-9fef-bb411a6797b0">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA[new java.io.ByteArrayInputStream( java.util.Base64.getDecoder().decode("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"))]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement mode="Opaque" x="173" y="0" width="172" height="32" uuid="8b23acd7-9fdf-449f-894b-bf9e65ed4378">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" size="8" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DANFSe v1.0
+Documento Auxiliar da NFS-e]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="173" width="284" height="12" uuid="160833c6-6471-4dc5-b4a5-c73dd85bddd0">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitxNome}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="164" width="284" height="11" uuid="a663a98e-e353-4c1d-9b58-168ea6bfc218">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Nome / Nome Empresarial]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="146" width="141" height="11" uuid="183240fe-b541-4b09-b07a-d26285bee615">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Prestador do Serviço]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="173" width="284" height="12" uuid="a8af0c3e-4e3d-46ee-a084-67fa48f12eb7">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitemail} != null && !$P{emitemail}.trim().isEmpty()
+    ? $P{emitemail}.toLowerCase()
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="164" width="284" height="11" uuid="2c7dd54b-2ada-49a4-9d2c-764e3646f923">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[E-mail]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="200" width="284" height="12" uuid="643a33d4-f0da-4f18-89b5-674de6b2ed19">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitxLgr}+", "+$P{emitnro}+", "+$P{emitxBairro}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="191" width="284" height="11" uuid="b2c9c45c-6a49-4d1a-a6af-1a50f36fbd3b">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Endereço]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="200" width="141" height="12" uuid="33c7c761-7031-4415-8919-77fe45875bb6">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitxMun}+" - "+$P{emitUF}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="191" width="141" height="11" uuid="7172e7ef-4dbf-45e2-b21f-3ad1644a5443">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Município]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="432" y="191" width="141" height="11" uuid="310fd707-1054-49d6-b0e7-605a91d1d665">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CEP]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="200" width="141" height="12" uuid="f38c08ca-de81-4c7f-9fd0-fdfa84eaac38">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{emitCEP}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="217" width="284" height="11" uuid="8315639b-e054-4687-9a57-a7553a4bc1e8">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Simples Nacional da Data de Competência]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="226" width="284" height="12" uuid="078740a5-4882-4087-8289-7b64fe60827f">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($P{opSimpNac}) ? "Não Optante" :
+"2".equals($P{opSimpNac}) ? "Optante - Microempreendedor Individual (MEI)" :
+"3".equals($P{opSimpNac}) ? "Optante - Microempresa ou Empresa de Pequeno Porte (ME/EPP)" :
+"Não Informado"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="217" width="284" height="11" uuid="1dd8f96b-b9c6-4b3d-b56d-c49e46ada38d">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Regime de Apuração Tributária pelo SN]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="226" width="284" height="12" uuid="ae844f0b-47e0-47e9-a272-a4a224f9a70a">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($P{regApTribSN}) ? "Regime de apuração dos tributos federais e municipal pelo SN":
+"2".equals($P{regApTribSN}) ? "Regime de apuração dos tributos federais pelo SN e o ISSQN pela NFS-e conforme respectiva legislação municipal do tributo" :
+"3".equals($P{regApTribSN})? "Regime de apuração dos tributos federais e municipal pela NFS-e conforme respectivas legislações federal e municipal de cada tributo"  : "Não Informado"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="310" width="141" height="12" uuid="ed7e032f-9f99-4a26-beb0-c68be4440d84">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomaCEP} != null && !$P{tomaCEP}.trim().isEmpty()
+    ? $P{tomaCEP}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="256" width="141" height="12" uuid="a6ef6f44-37f0-4727-8a3e-0f7c65450526">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomafone} != null && !$P{tomafone}.trim().isEmpty()
+    ? $P{tomafone}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="432" y="301" width="141" height="11" uuid="a5d38b0b-d1c9-4461-bbb5-f1cf784a68f4">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CEP]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="274" width="284" height="11" uuid="d86ddfef-521a-463e-af08-5038014c4d8e">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Nome / Nome Empresarial]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="247" width="141" height="11" uuid="bf97f594-5680-4134-aea6-5d09540a5974">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOMADOR DO SERVIÇO]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="283" width="284" height="12" uuid="023adbb0-d414-4061-87bb-31aa810ec973">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomaxNome}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="310" width="141" height="12" uuid="b90e1799-2a29-4445-9a31-2176148426a4">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomaxMun} != null && !$P{tomaxMun}.trim().isEmpty()
+    ? $P{tomaxMun}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="247" width="141" height="11" uuid="741e7bc8-144a-4524-8562-db17faa3a1bc">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CNPJ / CPF / NIF]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="256" width="141" height="12" uuid="f53e78f0-1ced-48ba-a870-747d709b053c">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomaIM} != null && !$P{tomaIM}.trim().isEmpty()
+    ? $P{tomaIM}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="289" y="283" width="284" height="12" uuid="a8c98c3d-42ca-47c1-8714-25ee1a1a9466">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomaemail} != null && !$P{tomaemail}.trim().isEmpty()
+    ? $P{tomaemail}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="274" width="284" height="11" uuid="1b4bcfc4-e5dc-47f7-aba2-45028803c4a0">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[E-mail]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="310" width="284" height="12" uuid="041d3b60-cdfa-433d-86a9-58b2ed1eac62">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomaxLgr}+", "+($P{tomanro} != null && !$P{tomanro}.trim().isEmpty() ? $P{tomanro} : "SN")+", "+
+$P{tomaxBairro}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="301" width="141" height="11" uuid="cbcd5e07-65c0-448b-b28f-54725e19f4ab">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Município]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="256" width="141" height="12" uuid="0d612e3b-b93e-4e38-94f7-189b05801918">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tomaCPF} != null && !$P{tomaCPF}.trim().isEmpty()
+    ? $P{tomaCPF}
+    : $P{tomaCNPJ}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="301" width="284" height="11" uuid="375a224a-1863-4fc3-8c47-10041b835f6a">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Endereço]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="289" y="247" width="141" height="11" uuid="af8e7d64-b911-405e-b733-ed59b9aa9371">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Inscrição Municipal]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="325" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="a311cff3-30a1-41bc-a814-96e5df624d10">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement x="432" y="247" width="141" height="11" uuid="ea73bfd9-4a35-440b-80b7-832d27e8bda6">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Telefone]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="339" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="6d2063e0-5551-49c9-a3af-d2a356d2987c">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement x="0" y="328" width="574" height="11" uuid="75d20d0a-0c4a-4583-b230-21fdaec83b6c">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="7" isBold="false"/>
+					</textElement>
+					<text><![CDATA[INTERMEDIÁRIO DO SERVIÇO NÃO IDENTIFICADO NA NFS-e]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="360" width="141" height="11" uuid="a6d8a316-3fdd-4aef-afb1-76de0616029a">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Código de Tributação Nacional]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="146" y="369" width="141" height="12" uuid="8bd0f5a8-67c7-48a5-9d43-05a1cb79520d">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{cTribMun} != null && !$P{cTribMun}.trim().isEmpty()
+    ? $P{cTribMun}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="369" width="141" height="24" uuid="9ed199e1-829f-4146-97e0-e97de4f297e3">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{cTribNac}+" - "+$P{xTribNac}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="360" width="141" height="11" uuid="a10abcd8-8a23-4118-bbb3-8856e71c6042">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Código de Tributação Municipal]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="341" width="141" height="11" uuid="7e2b8048-6b69-4acd-b7ba-f46ea4ed957c">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SERVIÇO PRESTADO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="394" width="570" height="11" uuid="5648d330-e146-4aec-b7ec-8ada0a5379ca">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Descrição do Serviço]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="403" width="570" height="24" uuid="dfed8467-0311-4818-b69a-16d52660dc59">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{xDescServ}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="360" width="141" height="11" uuid="30594fb0-b0b5-41a3-b778-6a4c0a6ecf71">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Local da Prestação
+]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="432" y="369" width="141" height="12" uuid="86bd7e12-8be0-409d-a916-a5275fac91c9">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{cPaisPrestacao} != null && !$P{cPaisPrestacao}.trim().isEmpty()
+    ? $P{cPaisPrestacao}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="369" width="141" height="12" uuid="4841900f-148c-477e-abf4-b9f58561b502">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{xLocPrestacao} != null && !$P{xLocPrestacao}.trim().isEmpty()
+    ? $P{xLocPrestacao}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="432" y="360" width="141" height="11" uuid="c14b3961-d298-4376-9dfc-5cb7452b037a">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[País da Prestação]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="429" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="f71d656a-9dc6-451b-b119-3a12fa9b6ff0">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="454" width="141" height="12" uuid="b84b1658-957e-45b3-b94b-ade688489810">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($P{tribISSQN})
+    ? "Operação tributável"
+    : "2".equals($P{tribISSQN})
+        ? "Imunidade"
+        : "3".equals($P{tribISSQN})
+            ? "Exportação de serviço"
+            : "4".equals($P{tribISSQN})
+                ? "Não Incidência"
+                : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="481" width="141" height="12" uuid="cd6bb31a-c03e-4664-ab78-4f5b7109cda2">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["0".equals($P{tpImunidade}) ? "Imunidade": 
+"1".equals($P{tpImunidade}) ? "Patrimônio, renda ou serviços":
+"2".equals($P{tpImunidade}) ? "Templos de qualquer culto": 
+"3".equals($P{tpImunidade}) ? "Patrimônio, renda ou serviços dos partidos políticos": 
+"4".equals($P{tpImunidade}) ? "Livros, jornais, periódicos e o papel destinado a sua impressão": 
+"5".equals($P{tpImunidade}) ? "Fonogramas e videofonogramas musicais produzidos no Brasil": 
+"-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="455" width="141" height="12" uuid="3d4e3894-339f-4f2f-a388-5f61c7edfd28">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{xLocIncid} != null && !$P{xLocIncid}.trim().isEmpty()
+    ? $P{xLocIncid}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="445" width="141" height="11" uuid="f0840b81-594d-4017-af73-9629c967ebe3">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Tributação do ISSQN]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="472" width="141" height="11" uuid="154f5aba-f340-48a6-a91f-a48967d0e465">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Tipo de Imunidade]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="431" width="141" height="11" uuid="18d42a14-d42d-496f-88ea-9f5216fc5d65">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TRIBUTAÇÃO MUNICIPAL
+]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="481" width="141" height="12" uuid="603da7bb-0834-4235-b176-c5b4f479f4e0">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($P{tpSusp}) ? "Imunidade": 
+"2".equals($P{tpSusp}) ? "Patrimônio, renda ou serviços":
+"Não"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="472" width="141" height="11" uuid="60d59a3f-e7c2-402f-b38e-c04510b96e7c">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Suspensão da Exigibilidade do ISSQN]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="455" width="141" height="12" uuid="f3d758ab-39e4-4f03-bb75-8675553bf8c5">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["0".equals($P{regEspTrib}) ? "Nenhum": 
+"1".equals($P{regEspTrib}) ? "Ato Cooperado":
+"2".equals($P{regEspTrib}) ? "Estimativa":
+"3".equals($P{regEspTrib}) ? "Microempresa Municipal":
+"4".equals($P{regEspTrib}) ? "Notário ou Registrador":
+"5".equals($P{regEspTrib}) ? "Profissional Autônomo":
+"6".equals($P{regEspTrib}) ? "Sociedade de Profissionais":
+"-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="432" y="445" width="141" height="11" uuid="930a556c-8cc4-4ad5-a610-a44f5c862ec9">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Regime Especial de Tributação]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="289" y="445" width="141" height="11" uuid="6783b974-0322-4e96-bb08-270fbad455d3">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Município de Incidência do ISSQN]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="454" width="141" height="12" uuid="cca1597d-c63e-4b62-a510-9add413d1c24">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{cPaisResult} != null && !$P{cPaisResult}.trim().isEmpty()
+    ? $P{cPaisResult}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="445" width="141" height="11" uuid="6a51c7cd-009a-4123-bbf2-740082b0d300">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[País Resultado da Prestação do Serviço]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="482" width="141" height="12" uuid="a64e6cd8-4c70-47d0-b986-b1218d9ffb19">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($P{tpBM}) ? "Isenção": 
+"2".equals($P{tpBM}) ? "Redução da BC":
+"3".equals($P{tpBM}) ? "Redução da BC":
+"4".equals($P{tpBM}) ? "Alíquota Diferenciada":
+"-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="482" width="141" height="12" uuid="f0e23f53-4765-4812-a79a-c2594f434124">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nProcesso} != null && !$P{nProcesso}.trim().isEmpty()
+    ? $P{nProcesso}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="432" y="472" width="141" height="11" uuid="bd2a1255-ca59-4066-ab32-071bd1482467">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Benefício Municipal
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="289" y="472" width="141" height="11" uuid="83cb96ca-fedc-41b0-8cb9-a64cca2f9ca6">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Número Processo Suspensão]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="507" width="141" height="12" uuid="5949765b-0e12-4c6e-aeb4-24bd07e4f6da">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vCalcBM} != null && !$P{vCalcBM}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vCalcBM}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="497" width="141" height="11" uuid="4cc83205-3c3f-4ae0-a9d2-ddb8339f47c9">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Valor do Serviço]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="506" width="141" height="12" uuid="fa5d61c6-9ba6-4fd8-b127-1682e9f0506c">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vDescIncond} != null && !$P{vDescIncond}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vDescIncond}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="497" width="141" height="11" uuid="b9ffd1b5-2ed6-404f-a7ef-33ca3116fdde">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Desconto Incondicionado]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="507" width="141" height="12" uuid="686581dd-38ef-4117-b1e0-dc3ff3895fc5">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vCalcDR} != null && !$P{vCalcDR}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vCalcDR}))) : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="506" width="141" height="12" uuid="4880c5d4-89b1-4ecd-9752-695107f21981">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vServ} != null && !$P{vServ}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vServ}))) : "R$"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="497" width="141" height="11" uuid="6762d643-3fc3-4bb0-9e8a-b7821a3ff5ed">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total Deduções/Reduções]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="432" y="497" width="141" height="11" uuid="c912bece-cc6e-42c4-b007-74b8c9e2809c">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Cálculo do BM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="289" y="522" width="141" height="11" uuid="a1c43e21-169d-4e5b-aecd-cac5a9aaf754">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Retenção do ISSQN]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="531" width="141" height="12" uuid="277527e3-f166-4f30-8338-698a7c18b50d">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{pAliq} != null && !$P{pAliq}.trim().isEmpty()
+    ? $P{pAliq}
+    : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="432" y="522" width="141" height="11" uuid="0f763189-76cd-456d-93ff-dced89389e1a">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ISSQN Apurado]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="532" width="141" height="12" uuid="7df76993-4bc8-4d73-9672-cba454ab6056">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vISSQN} != null && !$P{vISSQN}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vISSQN}))) : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="531" width="141" height="12" uuid="4ab89ae2-d3c1-4d9c-b541-49cad8812787">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vBC} != null && !$P{vBC}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vBC}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="522" width="141" height="11" uuid="7306e75d-c524-4439-837d-04b3f9642024">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[BC ISSQN]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="532" width="141" height="12" uuid="dcbffba0-0ca7-49e5-b65a-01f23e81613f">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($P{tpRetISSQN})
+    ? "Não Retido"
+    : "2".equals($P{tpRetISSQN})
+        ? "Retido pelo Tomador"
+        : "3".equals($P{tpRetISSQN})
+            ? "Retido pelo Intermediario"
+            : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="522" width="141" height="11" uuid="11c1f67d-08b0-48b8-94ef-0529c4acffa7">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Alíquota Aplicada]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="545" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="87de24ef-5634-4611-a4a8-f819322f2c24">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="570" width="141" height="12" uuid="1bc0c435-ea77-4c39-8f42-3ed3de0014c8">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vRetCP} != null && !$P{vRetCP}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vRetCP}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="588" width="141" height="11" uuid="c4e7675e-24f9-4cca-9c86-7cbb35ceeb59">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PIS Devido]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="146" y="588" width="141" height="11" uuid="52fc382f-bf7f-4cc3-8501-a64acee7d4c1">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[COFINS Devido]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="561" width="141" height="11" uuid="7016e52d-7c02-49f8-ba27-491f83fd04aa">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[IRRF]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="598" width="141" height="12" uuid="aea86ffe-d40e-4631-a1e4-ed5a671a17b0">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vTotTribFed} != null && !$P{vTotTribFed}.trim().isEmpty() && !$P{vTotTribFed}.equals("0.00")) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vTotTribFed}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="547" width="141" height="11" uuid="3cc61e37-fb12-45a8-9ce8-f657f35d5057">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TRIBUTAÇÃO FEDERAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="146" y="561" width="141" height="11" uuid="05e40cd5-0272-41ab-a15b-c49b7a7e328c">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CP Retido
+]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="571" width="141" height="12" uuid="bccf0608-48e4-41eb-938d-44955976cc11">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vRetCSLL} != null && !$P{vRetCSLL}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vRetCSLL}))) : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="570" width="141" height="12" uuid="813ac07d-9e56-4823-85be-e56a9c1cfbd3">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vRetIRRF} != null && !$P{vRetIRRF}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vRetIRRF}))) : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="597" width="141" height="12" uuid="aeec4368-9cb7-4bdb-909c-addc104730d6">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vCofins} != null && !$P{vCofins}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vCofins}))) : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="598" width="141" height="12" uuid="22bf23b9-97e1-462f-bc7c-821729099d00">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["1".equals($P{tpRetPisCofins}) ? "Retido": 
+"2".equals($P{tpRetPisCofins}) ? "Não Retido":
+"-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="597" width="141" height="12" uuid="de763a07-19ed-469b-9d82-5e682a246387">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vPis} != null && !$P{vPis}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vPis}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="588" width="141" height="11" uuid="c0ffe46a-9a75-4905-88ad-84184c6f2b12">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Retenção do PIS/COFINS/CSLL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="432" y="588" width="141" height="11" uuid="b2f0ee7b-9940-482e-b51d-c30c3dbe404b">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL TRIBUTAÇÃO FEDERAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="289" y="561" width="141" height="11" uuid="4eebe349-2efd-407d-9436-63dedef3a51e">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PIS/COFINS/CSLL Retidos]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="611" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="8d63f928-7823-4eff-a1a0-b462b1b6d50d">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="636" width="141" height="12" uuid="41b84c8a-87fd-483a-98a2-0fd25bc09031">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vServ} != null && !$P{vServ}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vServ}))) : "R$"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="289" y="627" width="141" height="11" uuid="998726a6-411d-491d-a1b1-713f75b01b55">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Desconto Incondicionado]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="146" y="627" width="141" height="11" uuid="49f4d70e-526c-4bb6-ac37-00616d2e8a09">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Desconto Condicionado]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="636" width="141" height="12" uuid="7f42e6d6-4206-49f1-988d-14a3c80c9992">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vDescCond} != null && !$P{vDescCond}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vDescCond}))) : "-"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="146" y="663" width="141" height="12" uuid="0d4e467f-a972-4093-82fe-96ef5f2aedb3">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[( (($P{vPis} != null && !$P{vPis}.trim().isEmpty()) || ($P{vCofins} != null && !$P{vCofins}.trim().isEmpty())) ?
+(java.text.NumberFormat.getCurrencyInstance(new java.util.Locale("pt", "BR")).format(
+(new java.math.BigDecimal(($P{vPis} != null && !$P{vPis}.trim().isEmpty()) ? $P{vPis} : "0")).add(
+(new java.math.BigDecimal(($P{vCofins} != null && !$P{vCofins}.trim().isEmpty()) ? $P{vCofins} : "0")))))
+: "-")]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="627" width="141" height="11" uuid="0e7e5c80-5c45-43fc-bc59-e713a3f1dc25">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Valor do Serviço]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="289" y="637" width="141" height="12" uuid="c33a909c-2d2a-4608-b7ce-c7a1687d3f7d">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vDescIncond} != null && !$P{vDescIncond}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vDescIncond}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="654" width="141" height="11" uuid="80e87bd5-b05d-4919-94de-85761d4d831a">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[IRRF, CP, PIS, COFINS, CSLL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="432" y="654" width="141" height="11" uuid="e952e5f2-715a-450e-8281-83ab4367c742">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Valor Líquido da NFS-e]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="663" width="141" height="12" uuid="f9d95acb-eee5-4f3f-96ad-4a573291bc5f">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vTotalRet} != null && !$P{vTotalRet}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vTotalRet}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="613" width="141" height="11" uuid="4e87cfac-ea33-440f-aa20-db3adf35a4c6">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[VALOR TOTAL DA NFS-E]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="664" width="141" height="12" uuid="a3704dc9-53e1-46d4-93e5-81969ec2ef8b">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vLiq} != null && !$P{vLiq}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vLiq}))) : "R$"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="146" y="654" width="141" height="11" uuid="b6273a69-46a8-4618-b8e4-5e691fee3621">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PIS/COFINS Devidos]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="432" y="637" width="141" height="12" uuid="29c480b2-3593-45ca-b919-2a9cd5c3a5c6">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vISSQN} != null && !$P{vISSQN}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vISSQN}))) : "-"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="432" y="627" width="141" height="11" uuid="915ca7fe-f0e1-4233-a3de-24307051be45">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ISSQN Retido
+]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="677" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="b1b3903b-40e3-4194-bb74-3a4984cdf132">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement x="199" y="701" width="180" height="12" uuid="92225d0e-5ecd-47ef-8529-f93ed282852f">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vTotTribEst} != null && !$P{vTotTribEst}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vTotTribEst}))) : "R$"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="199" y="692" width="180" height="11" uuid="7f6a4b61-bc59-482f-bbb3-545e8543cc72">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Estaduais]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="392" y="702" width="180" height="12" uuid="2289a6c7-dc44-4c84-b6a9-35e88a75240f">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vTotTribMun} != null && !$P{vTotTribMun}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vTotTribMun}))) : "R$"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="679" width="284" height="11" uuid="402f3ecd-335f-4155-9a8f-66d75e3d3ba6">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAIS APROXIMADOS DOS TRIBUTOS
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="3" y="692" width="180" height="11" uuid="14d31f01-4454-4d32-b2ad-712a631c7983">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Federais]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="701" width="180" height="12" uuid="6935eb26-675b-499b-97f8-e3638148cd58">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{vTotTribFed} != null && !$P{vTotTribFed}.trim().isEmpty()) ?
+(java.text.NumberFormat
+    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
+    .format(new java.math.BigDecimal($P{vTotTribFed}))) : "R$"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="392" y="692" width="180" height="11" uuid="f58850d6-378b-4670-92ba-468476bc0f21">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Municipais]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="715" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="64fb1107-90ee-4122-acde-5558651b9e2c">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement x="3" y="717" width="568" height="11" uuid="d0a33f8e-a13d-4182-ad31-b461ca2196c8">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[INFORMAÇÕES COMPLEMENTARES]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="3" y="738" width="568" height="12" uuid="19923a6c-4450-48cc-aae3-451a696a6c87">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{cNBS}+" - "+$P{xNBS}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="729" width="568" height="11" uuid="0df9e363-39ee-4c71-ba10-82d945dbce05">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans" size="6" isBold="true"/>
+					</textElement>
+					<text><![CDATA[NBS]]></text>
+				</staticText>
+				<image>
+					<reportElement x="469" y="41" width="80" height="67" uuid="b0be91ab-9770-427b-93b9-24db9390cdf3">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgQrCode}]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement x="438" y="0" width="134" height="11" uuid="a3c2000e-3c04-49a6-b114-e6f656bfcf82">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Prefeitura Municipal de "+$P{xLocIncid}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="438" y="10" width="134" height="10" uuid="45b5b1f8-d790-4a5b-b353-27e118dfbd7a">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Secretaria Municipal da Fazenda"]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="17" width="134" height="10" uuid="9e897f67-7731-49bf-aab8-3e409fc1ed29">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{prefeituraFone}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="438" y="25" width="134" height="10" uuid="33314c5e-c581-4f4f-becf-5fd9951a4fb4">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{prefeituraEmail}]]></textFieldExpression>
+				</textField>
+				<image>
+					<reportElement x="395" y="0" width="40" height="32" uuid="171ea8b5-08c8-4550-b2b8-6328dccbd8e7">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{imgPrefeitura}]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
