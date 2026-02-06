@@ -83,6 +83,8 @@
 	<parameter name="prefeituraFone" class="java.lang.String"/>
 	<parameter name="prefeituraEmail" class="java.lang.String"/>
 	<parameter name="imgPrefeitura" class="java.lang.Object"/>
+	<parameter name="tomaUf" class="java.lang.String"/>
+	<parameter name="ufLocPrestacao" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -669,9 +671,12 @@ Documento Auxiliar da NFS-e]]></text>
 					<textElement>
 						<font fontName="DejaVu Sans" size="8"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$P{tomaxMun} != null && !$P{tomaxMun}.trim().isEmpty()
+					<textFieldExpression><![CDATA[(($P{tomaxMun} != null && !$P{tomaxMun}.trim().isEmpty()
     ? $P{tomaxMun}
-    : "-"]]></textFieldExpression>
+    : "-")+
+    ($P{tomaUf} != null && !$P{tomaUf}.trim().isEmpty()
+    ? " - "+$P{tomaUf}
+    : ""))]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement x="146" y="247" width="141" height="11" uuid="741e7bc8-144a-4524-8562-db17faa3a1bc">
@@ -932,9 +937,12 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="8"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$P{xLocPrestacao} != null && !$P{xLocPrestacao}.trim().isEmpty()
+					<textFieldExpression><![CDATA[(($P{xLocPrestacao} != null && !$P{xLocPrestacao}.trim().isEmpty()
     ? $P{xLocPrestacao}
-    : "-"]]></textFieldExpression>
+    : "-")+
+    ($P{ufLocPrestacao} != null && !$P{ufLocPrestacao}.trim().isEmpty()
+    ? " - "+$P{ufLocPrestacao}
+    : ""))]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement x="432" y="360" width="141" height="11" uuid="c14b3961-d298-4376-9dfc-5cb7452b037a">
