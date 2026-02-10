@@ -85,6 +85,7 @@
 	<parameter name="imgPrefeitura" class="java.lang.Object"/>
 	<parameter name="tomaUf" class="java.lang.String"/>
 	<parameter name="ufLocPrestacao" class="java.lang.String"/>
+	<parameter name="xRetCP" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -1416,7 +1417,7 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="6" isBold="true"/>
 					</textElement>
-					<text><![CDATA[PIS Devido]]></text>
+					<text><![CDATA[PIS - Débito Apuração Própria]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="146" y="588" width="141" height="11" uuid="52fc382f-bf7f-4cc3-8501-a64acee7d4c1">
@@ -1427,7 +1428,8 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="6" isBold="true"/>
 					</textElement>
-					<text><![CDATA[COFINS Devido]]></text>
+					<text><![CDATA[COFINS - Débito Apuração Própria
+]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="3" y="561" width="141" height="11" uuid="7016e52d-7c02-49f8-ba27-491f83fd04aa">
@@ -1442,7 +1444,7 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<text><![CDATA[IRRF]]></text>
 				</staticText>
 				<textField isBlankWhenNull="true">
-					<reportElement x="432" y="598" width="141" height="12" uuid="aea86ffe-d40e-4631-a1e4-ed5a671a17b0">
+					<reportElement x="432" y="571" width="141" height="12" uuid="aea86ffe-d40e-4631-a1e4-ed5a671a17b0">
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 						<property name="com.jaspersoft.studio.unit.x" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -1450,10 +1452,9 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="8"/>
 					</textElement>
-					<textFieldExpression><![CDATA[($P{vTotTribFed} != null && !$P{vTotTribFed}.trim().isEmpty() && !$P{vTotTribFed}.equals("0.00")) ?
-(java.text.NumberFormat
-    .getCurrencyInstance(new java.util.Locale("pt", "BR"))
-    .format(new java.math.BigDecimal($P{vTotTribFed}))) : "-"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$P{xRetCP} != null && !$P{xRetCP}.trim().isEmpty()
+    ? $P{xRetCP}
+    : "-"]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement x="3" y="547" width="141" height="11" uuid="3cc61e37-fb12-45a8-9ce8-f657f35d5057">
@@ -1476,8 +1477,7 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="6" isBold="true"/>
 					</textElement>
-					<text><![CDATA[CP Retido
-]]></text>
+					<text><![CDATA[Contribuição Previdenciária - Retida]]></text>
 				</staticText>
 				<textField isBlankWhenNull="true">
 					<reportElement x="289" y="571" width="141" height="12" uuid="bccf0608-48e4-41eb-938d-44955976cc11">
@@ -1560,7 +1560,7 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<text><![CDATA[Retenção do PIS/COFINS/CSLL]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="432" y="588" width="141" height="11" uuid="b2f0ee7b-9940-482e-b51d-c30c3dbe404b">
+					<reportElement x="432" y="561" width="141" height="11" uuid="b2f0ee7b-9940-482e-b51d-c30c3dbe404b">
 						<property name="com.jaspersoft.studio.unit.x" value="px"/>
 						<property name="com.jaspersoft.studio.unit.y" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -1568,7 +1568,8 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="6" isBold="true"/>
 					</textElement>
-					<text><![CDATA[TOTAL TRIBUTAÇÃO FEDERAL]]></text>
+					<text><![CDATA[Descrição Contrib. Sociais - Retidas
+]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="289" y="561" width="141" height="11" uuid="4eebe349-2efd-407d-9436-63dedef3a51e">
@@ -1579,7 +1580,7 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="6" isBold="true"/>
 					</textElement>
-					<text><![CDATA[PIS/COFINS/CSLL Retidos]]></text>
+					<text><![CDATA[Contribuições Sociais - Retidas]]></text>
 				</staticText>
 				<rectangle>
 					<reportElement mode="Opaque" x="0" y="611" width="574" height="1" forecolor="rgba(0, 0, 0, 0.0)" backcolor="rgba(3, 3, 3, 0.9764706)" uuid="8d63f928-7823-4eff-a1a0-b462b1b6d50d">
@@ -1687,7 +1688,7 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="6" isBold="true"/>
 					</textElement>
-					<text><![CDATA[IRRF, CP, PIS, COFINS, CSLL]]></text>
+					<text><![CDATA[Total das Retenções Federais]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="432" y="654" width="141" height="11" uuid="e952e5f2-715a-450e-8281-83ab4367c742">
@@ -1749,7 +1750,7 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="6" isBold="true"/>
 					</textElement>
-					<text><![CDATA[PIS/COFINS Devidos]]></text>
+					<text><![CDATA[PIS/COFINS - Débito Apur. Própria]]></text>
 				</staticText>
 				<textField isBlankWhenNull="true">
 					<reportElement x="432" y="637" width="141" height="12" uuid="29c480b2-3593-45ca-b919-2a9cd5c3a5c6">
@@ -1904,7 +1905,8 @@ $P{tomaxBairro}]]></textFieldExpression>
 					<textElement>
 						<font fontName="DejaVu Sans" size="8"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$P{cNBS}+" - "+$P{xNBS}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[($P{cNBS} != null && !$P{cNBS}.trim().isEmpty() ? $P{cNBS} + " - ":"")+ 
+($P{xNBS} != null && !$P{xNBS}.trim().isEmpty() ? $P{xNBS}:"-")]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement x="3" y="729" width="568" height="11" uuid="0df9e363-39ee-4c71-ba10-82d945dbce05">
